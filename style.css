@@ -283,3 +283,96 @@ main {
 .centrado {
   text-align: center;
 }
+/* Header fijo */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #5a189a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+}
+
+/* Botón hamburguesa (solo celular) */
+.menu-btn {
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+
+/* Menú desplegable (celular) */
+.nav {
+  position: absolute;
+  top: 60px; /* justo debajo del header */
+  right: 20px;
+  background: #3c096c;
+  border-radius: 8px;
+  display: none;
+  z-index: 1001;
+}
+
+.nav.active {
+  display: block;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  border-bottom: 1px solid #5a189a;
+}
+
+.nav ul li:last-child {
+  border-bottom: none;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (min-width: 768px) {
+  .menu-btn {
+    display: none; /* ocultamos hamburguesa en PC */
+  }
+
+  .nav {
+    position: static; /* menú normal, no absoluto */
+    display: block !important;
+    background: transparent;
+  }
+
+  .nav ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav ul li {
+    border: none;
+  }
+
+  .nav ul li a {
+    color: white;
+    padding: 0;
+  }
+
+  .nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+  }
+}
