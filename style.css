@@ -376,3 +376,229 @@ main {
     border-bottom: 2px solid #fff;
   }
 }
+/* === MENÚ DE NAVEGACIÓN GENERAL === */
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif; /* fuente más moderna */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+/* ==== LINKS DENTRO DE LAS CONSPIRACIONES DESTACADAS (versión oscura) ==== */
+.card ul li a {
+  color: #4b0082; /* violeta oscuro */
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Hover: más contraste y resplandor sutil */
+.card ul li a:hover {
+  color: #7b2cbf; /* violeta más brillante */
+  text-shadow: 0 0 8px rgba(123, 44, 191, 0.5);
+  transform: translateX(3px);
+}
+
+/* Click */
+.card ul li a:active {
+  color: #9d4edd;
+  transform: scale(0.98);
+}
+
+.card ul li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 3px 6px;
+}
+/* ===== Contacto - estilos facheros ===== */
+.contact-hero {
+  padding: 120px 20px 40px; /* deja espacio por el header fijo */
+  background: linear-gradient(180deg, rgba(90,24,154,0.06), rgba(0,0,0,0.02));
+  color: #222;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-hero h1 {
+  font-size: 36px;
+  color: #5a189a;
+  margin-bottom: 8px;
+}
+
+.contact-hero .sub {
+  color: #555;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+/* Grid: cards + form */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 30px;
+  padding: 40px 20px 80px;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Cards columna */
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+/* ==== Contact Cards estilo “cuadros de teorías” morado oscuro ==== */
+.contact-card {
+  display: block;
+  background: #3c096c; /* mismo color morado que los cuadros de teorías */
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(60,9,108,0.5);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-card h3 {
+  margin: 0 0 8px;
+  color: #d6b3ff; /* título violeta claro */
+  font-size: 18px;
+}
+
+.contact-card p {
+  margin: 0;
+  color: #cfcfcf; /* descripción gris suave */
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(123,44,191,0.25); /* sombra hover violeta */
+}
+
+/* Social row inside cards */
+.social-row {
+  margin-top: 6px;
+  padding: 12px;
+  background: transparent;
+  color: #ddd;
+  border-radius: 10px;
+}
+
+.social-row p {
+  margin: 0 0 8px 0;
+  color: #ccc;
+}
+
+.social-row .redes {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.social-row img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+/* Form */
+.contact-form-wrap {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 500;
+  margin: 12px 0 6px;
+  color: #222;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.form-actions {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg,#5a189a,#7b2cbf);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary:hover { transform: translateY(-2px); }
+
+.btn-ghost {
+  background: transparent;
+  color: #555;
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Small note */
+.small-note {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #666;
+}
+
+/* Footer tweaks (si ya tenés footer, estos son compatibles) */
+.footer {
+  margin-top: 30px;
+}
+
+/* Responsive: en móviles apilamos */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-hero {
+    padding-top: 100px;
+  }
+
+  .contact-form-wrap {
+    order: 2;
+  }
+}
+.img-derecha {
+  float: right;        /* hace que la imagen vaya a la derecha */
+  margin: 0 0 10px 15px; /* margen: arriba 0, derecha 0, abajo 10px, izquierda 15px */
+  width: 200px;        /* tamaño de la imagen (ajustalo a lo que necesites) */
+  height: auto;
+  border-radius: 8px;  /* opcional: bordes redondeados */
+}
