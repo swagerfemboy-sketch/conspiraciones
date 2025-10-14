@@ -654,3 +654,32 @@ main {
 .next {
   right: 10px;
 }
+/* CARRUSEL CENTRADOO */
+.carrusel {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* CRDITOS CENTRADOS */
+.creditosxdd {
+  text-align: center; /* centra solo el texto dentro */
+}
+
+.creditosxdd ul {
+  list-style: none; /* opcional: quita los bullets */
+  padding: 0;
+}
+
+.creditosxdd li {
+  margin: 5px 0; /* separación entre líneas */
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-color: #5a189a;
+}
