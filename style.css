@@ -20,24 +20,28 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(26, 26, 29, 0.95); /* gris oscuro semi-transparente */
-  backdrop-filter: blur(5px); /* difumina un poco el fondo detrás */
+  background-color: #1a1a1d; /* gris oscuro sólido */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 20px;
+  padding: 10px 20px; /* tamaño original */
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.4); /* sombra sutil */
-  transition: background-color 0.3s ease;
+  box-shadow: none;       /* quitar cualquier sombra extra */
+  backdrop-filter: none;  /* quitar blur */
 }
 
 
 /* Logo */
-.logo {
-  background-color: rgba(40, 40, 45, 0.4); /* un poco más transparente */
-  padding: 2px 6px; /* menos espacio alrededor del logo */
-  border-radius: 4px;
+.logo img {
+  height: 40px; /* tamaño original */
 }
+
+.logo {
+  background: none;  /* quitar recuadro */
+  padding: 0;        /* quitar padding extra */
+  border-radius: 0;  /* quitar bordes */
+}
+
 
 /* Botón hamburguesa */
 .menu-btn {
@@ -353,6 +357,7 @@ main {
     padding-top: 100px;
   }
 }
+
 
 
 
