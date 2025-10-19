@@ -46,11 +46,12 @@ html, body {
   background-color: #1a1a1d;
   border-radius: 8px;
   display: none;
+  flex-direction: column;
   z-index: 1001;
 }
 
 .nav.active {
-  display: block;
+  display: flex;
 }
 
 .nav ul {
@@ -312,3 +313,4 @@ main {
   .contact-grid { grid-template-columns: 1fr; }
   .contact-hero { padding-top: 100px; }
 }
+
