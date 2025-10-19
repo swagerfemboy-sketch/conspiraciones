@@ -50,49 +50,29 @@ html, body {
 /* Menú desplegable */
 .nav {
   position: absolute;
-  top: 60px; /* justo debajo del header */
+  top: 60px; /* debajo del header */
   right: 20px;
-  background-color: rgba(26,26,29,0.95); /* gris oscuro semi-transparente */
+  background-color: #1a1a1d; /* mismo gris oscuro que header */
   border-radius: 8px;
   display: none;
   z-index: 1001;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* sombra sutil */
 }
 
 .nav.active {
   display: block;
 }
 
-.nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav ul li {
-  border-bottom: 1px solid rgba(255,255,255,0.1); /* línea muy suave */
-}
-
-.nav ul li:last-child {
-  border-bottom: none;
-}
-
 .nav ul li a {
-  color: #FF5722; /* naranja para enlaces */
-  text-decoration: none;
-  display: block;
+  color: #FF5722; /* enlaces naranja */
   padding: 10px 20px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
 }
 
 .nav ul li a:hover {
-  color: #FFC107; /* naranja más brillante al pasar mouse */
-  background-color: rgba(255,255,255,0.05); /* hover suave */
+  color: #FFC107;
+  background-color: rgba(255,255,255,0.05);
   border-radius: 6px;
 }
+
 
 /* Para no tapar el contenido */
 main {
@@ -352,6 +332,7 @@ main {
     padding-top: 100px;
   }
 }
+
 
 
 
