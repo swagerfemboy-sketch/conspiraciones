@@ -33,11 +33,10 @@ html, body {
 
 
 /* Logo */
-.logo {
-  background-color: rgba(40, 40, 45, 0.6); /* resalta logo */
-  padding: 5px 10px;
-  border-radius: 6px;
+.logo img {
+  height: 40px;
 }
+
 /* Botón hamburguesa */
 .menu-btn {
   font-size: 28px;
@@ -348,6 +347,7 @@ main {
     padding-top: 100px;
   }
 }
+
 
 
 
