@@ -54,22 +54,14 @@ html, body {
 }
 
 /* Menú desplegable */
-/* ===== Menú desplegable elegante y gris oscuro ===== */
-/* Menú desplegable hamburguesa */
-/* Menú desplegable dentro de la sección */
 .nav {
   position: absolute;
-  top: 60px; /* justo debajo del header */
-  left: 50%; /* centrado horizontal */
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 300px;
-  background-color: #1a1a1d; /* gris oscuro uniforme */
+  top: 60px; /* debajo del header */
+  right: 20px;
+  background-color: #1a1a1d; /* mismo gris oscuro que header */
   border-radius: 8px;
   display: none;
   z-index: 1001;
-  padding: 0;
-  overflow: hidden; /* evita links fuera del contenedor */
 }
 
 .nav.active {
@@ -83,7 +75,7 @@ html, body {
 }
 
 .nav ul li {
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1); /* línea muy suave */
 }
 
 .nav ul li:last-child {
@@ -91,42 +83,20 @@ html, body {
 }
 
 .nav ul li a {
-  color: #FF5722; /* naranja */
+  color: #FF5722; /* enlaces naranja */
   text-decoration: none;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 20px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   transition: all 0.3s ease;
-  box-sizing: border-box;
 }
 
 .nav ul li a:hover {
-  color: #FFC107; /* naranja brillante */
+  color: #FFC107; /* naranja más brillante */
   background-color: rgba(255,255,255,0.05); /* hover suave */
   border-radius: 6px;
 }
-
-/* Desktop */
-@media (min-width: 768px) {
-  .menu-btn { display: none; }
-
-  .nav {
-    position: static;
-    display: block !important;
-    width: auto;
-    max-width: none;
-    background: transparent;
-    border-radius: 0;
-  }
-
-  .nav ul { display: flex; gap: 20px; }
-  .nav ul li { border: none; }
-  .nav ul li a { padding: 0; color: white; }
-  .nav ul li a:hover { border-bottom: 2px solid #fff; background: none; }
-}
-
-
 
 /* Para no tapar el contenido */
 main {
@@ -393,6 +363,7 @@ main {
     color: #E0E0E0 !important;
   }
 }
+
 
 
 
