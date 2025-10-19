@@ -52,20 +52,79 @@ html, body {
   cursor: pointer;
   display: block;
 }
-
-/* Menú desplegable */
+/* ===== MENÚ DESPLEGABLE ===== */
 .nav {
-  background-color: #1a1a1d; /* gris oscuro uniforme */
+  position: absolute;
+  top: 60px; /* justo debajo del header */
+  right: 20px;
+  background-color: #1a1a1d; /* gris oscuro */
+  border-radius: 8px;
+  display: none;
+  z-index: 1001;
+}
+
+.nav.active {
+  display: block;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  border-bottom: 1px solid rgba(255,255,255,0.1); /* línea suave */
+}
+
+.nav ul li:last-child {
+  border-bottom: none;
 }
 
 .nav ul li a {
   color: #FF5722; /* enlaces naranja */
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .nav ul li a:hover {
-  color: #FFC107; /* naranja más brillante */
+  color: #FFC107; /* naranja brillante */
   background-color: rgba(255,255,255,0.05); /* hover suave */
+  border-radius: 6px;
 }
+
+/* ===== MENÚ HORIZONTAL EN PANTALLAS GRANDES ===== */
+@media (min-width: 768px) {
+  .nav {
+    position: static;
+    display: block !important; /* siempre visible */
+    background: transparent;
+  }
+
+  .nav ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav ul li {
+    border: none;
+  }
+
+  .nav ul li a {
+    padding: 0;
+    color: white; /* links blancos en header grande */
+  }
+
+  .nav ul li a:hover {
+    background: none;
+    border-bottom: 2px solid #fff; /* efecto hover en desktop */
+  }
+}
+
 
 
 /* Para no tapar el contenido */
@@ -333,6 +392,7 @@ main {
     color: #E0E0E0 !important;
   }
 }
+
 
 
 
