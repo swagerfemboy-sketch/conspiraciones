@@ -54,8 +54,8 @@ html, body {
   background: #3c096c;
   border-radius: 8px;
   display: none;
-  z-index: 1001;
 }
+
 
 .nav.active {
   display: block;
@@ -348,5 +348,6 @@ main {
     padding-top: 100px;
   }
 }
+
 
 
