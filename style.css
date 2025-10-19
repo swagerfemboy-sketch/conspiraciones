@@ -278,10 +278,11 @@ main {
 /* Contacto */
 .contact-hero {
   padding: 120px 20px 40px;
-  background: linear-gradient(180deg, rgba(90,24,154,0.06), rgba(0,0,0,0.02));
+  background-color: #1a1a1d; /* gris oscuro uniforme */
   color: #E0E0E0;
   text-align: center;
 }
+
 
 .contact-hero h1 {
   font-size: 36px;
@@ -357,6 +358,7 @@ main {
     padding-top: 100px;
   }
 }
+
 
 
 
