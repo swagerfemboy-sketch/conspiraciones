@@ -57,16 +57,12 @@ html, body {
 /* ===== Menú desplegable elegante y gris oscuro ===== */
 .nav {
   position: absolute;
-  top: 60px;
-  right: 0;          /* ajustar a 0 para que no sobresalga */
-  left: 0;           /* opcional, hace que ocupe todo el ancho en móviles */
-  max-width: 100vw;  /* nunca más ancho que la ventana */
-  background: #3c096c;
+  top: 60px; /* debajo del header */
+  right: 20px;
+  background-color: #1a1a1d; /* mismo gris oscuro que header */
   border-radius: 8px;
   display: none;
   z-index: 1001;
-  overflow-x: hidden; /* previene overflow dentro del menú */
-  margin: 0 auto;
 }
 
 .nav.active {
@@ -369,6 +365,7 @@ main {
     color: #E0E0E0 !important;
   }
 }
+
 
 
 
