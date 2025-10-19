@@ -56,94 +56,74 @@ html, body {
 /* Menú desplegable */
 /* ===== Menú desplegable elegante y gris oscuro ===== */
 /* Menú desplegable hamburguesa */
+/* Menú desplegable dentro de la sección */
 .nav {
   position: absolute;
   top: 60px; /* justo debajo del header */
   left: 50%; /* centrado horizontal */
-  transform: translateX(-50%); /* centrado exacto */
-  max-width: 90vw; /* no más ancho que la pantalla */
-  background-color: #1a1a1d; /* mismo gris oscuro que header */
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 300px;
+  background-color: #1a1a1d; /* gris oscuro uniforme */
   border-radius: 8px;
-  display: none; /* por defecto oculto */
+  display: none;
   z-index: 1001;
-  overflow-x: hidden; /* evita desbordes horizontales */
   padding: 0;
+  overflow: hidden; /* evita links fuera del contenedor */
 }
 
-/* Cuando el menú está activo */
 .nav.active {
   display: block;
 }
 
-/* Lista de enlaces */
 .nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* Cada item de la lista */
 .nav ul li {
-  border-bottom: 1px solid rgba(255,255,255,0.1); /* línea muy suave */
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-/* Último item sin borde */
 .nav ul li:last-child {
   border-bottom: none;
 }
 
-/* Enlaces dentro del menú */
 .nav ul li a {
   color: #FF5722; /* naranja */
   text-decoration: none;
   display: block;
-  padding: 10px 20px;
+  padding: 10px 15px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   transition: all 0.3s ease;
-  box-sizing: border-box; /* importante para que no se salga del contenedor */
+  box-sizing: border-box;
 }
 
-/* Hover de enlaces */
 .nav ul li a:hover {
   color: #FFC107; /* naranja brillante */
   background-color: rgba(255,255,255,0.05); /* hover suave */
   border-radius: 6px;
 }
 
-/* Responsive: ocultar hamburguesa en pantallas grandes y mostrar menú horizontal */
+/* Desktop */
 @media (min-width: 768px) {
-  .menu-btn {
-    display: none; /* oculta botón hamburguesa */
-  }
+  .menu-btn { display: none; }
 
   .nav {
-    position: static; /* no absolute en desktop */
-    display: block !important; /* siempre visible */
-    transform: none;
+    position: static;
+    display: block !important;
+    width: auto;
     max-width: none;
     background: transparent;
     border-radius: 0;
   }
 
-  .nav ul {
-    display: flex;
-    gap: 20px;
-  }
-
-  .nav ul li {
-    border: none;
-  }
-
-  .nav ul li a {
-    padding: 0;
-    color: white;
-  }
-
-  .nav ul li a:hover {
-    background: none;
-    border-bottom: 2px solid #fff;
-  }
+  .nav ul { display: flex; gap: 20px; }
+  .nav ul li { border: none; }
+  .nav ul li a { padding: 0; color: white; }
+  .nav ul li a:hover { border-bottom: 2px solid #fff; background: none; }
 }
 
 
@@ -413,6 +393,7 @@ main {
     color: #E0E0E0 !important;
   }
 }
+
 
 
 
