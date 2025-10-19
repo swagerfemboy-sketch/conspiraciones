@@ -33,14 +33,15 @@ html, body {
 
 
 /* Logo */
-.logo img {
-  height: 40px;
+.logo {
+  background-color: rgba(40, 40, 45, 0.6); /* resalta logo */
+  padding: 5px 10px;
+  border-radius: 6px;
 }
-
 /* Botón hamburguesa */
 .menu-btn {
   font-size: 28px;
-  color: white;
+  color: #FF5722; /* naranja para contrastar con fondo oscuro */
   cursor: pointer;
   display: block;
 }
@@ -347,4 +348,5 @@ main {
     padding-top: 100px;
   }
 }
+
 
