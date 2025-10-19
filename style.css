@@ -355,9 +355,13 @@ main {
   }
 
   .contact-hero {
-    padding-top: 100px;
-  }
+  padding: 120px 20px 40px;
+  background-color: #1a1a1d; /* gris oscuro uniforme */
+  color: #E0E0E0;
+  text-align: center;
 }
+}
+
 
 
 
