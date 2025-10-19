@@ -10,7 +10,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #5a189a;
+  background-color: #121212;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -682,4 +682,5 @@ main {
 a {
   text-decoration: underline;
   text-decoration-color: #5a189a;
+
 }
