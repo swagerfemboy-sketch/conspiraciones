@@ -12,7 +12,9 @@ html, body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
+
 
 /* Header fijo */
 .header {
@@ -364,6 +366,7 @@ main {
     color: #E0E0E0 !important;
   }
 }
+
 
 
 
