@@ -39,6 +39,7 @@ html, body {
   display: block;
 }
 
+/* ===== Menú Desplegable / Navegación ===== */
 .nav {
   position: absolute;
   top: 60px;
@@ -46,12 +47,11 @@ html, body {
   background-color: #1a1a1d;
   border-radius: 8px;
   display: none;
-  flex-direction: column;
   z-index: 1001;
 }
 
 .nav.active {
-  display: flex;
+  display: block;
 }
 
 .nav ul {
@@ -61,7 +61,7 @@ html, body {
 }
 
 .nav ul li {
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav ul li:last-child {
@@ -80,19 +80,23 @@ html, body {
 
 .nav ul li a:hover {
   color: #FFC107;
-  background-color: rgba(255,255,255,0.05);
+  background-color: rgba(255, 255, 255, 0.05);
   border-radius: 6px;
 }
 
+/* ===== Menú Horizontal en Desktop ===== */
 @media (min-width: 768px) {
   .nav {
     position: static;
-    display: block !important;
+    display: flex !important;
+    flex-direction: row;
     background: transparent;
+    border-radius: 0;
   }
 
   .nav ul {
     display: flex;
+    flex-direction: row;
     gap: 20px;
   }
 
@@ -110,6 +114,7 @@ html, body {
     border-bottom: 2px solid #fff;
   }
 }
+
 
 main {
   flex: 1;
@@ -313,4 +318,5 @@ main {
   .contact-grid { grid-template-columns: 1fr; }
   .contact-hero { padding-top: 100px; }
 }
+
 
