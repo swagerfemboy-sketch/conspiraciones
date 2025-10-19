@@ -44,10 +44,9 @@ html, body {
   position: absolute;
   top: 60px;
   right: 20px;
-  background-color: #1a1a1d;
+  background: #3c096c;
   border-radius: 8px;
   display: none;
-  z-index: 1001;
 }
 
 .nav.active {
@@ -56,12 +55,10 @@ html, body {
 
 .nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .nav ul li {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #5a189a;
 }
 
 .nav ul li:last-child {
@@ -69,50 +66,15 @@ html, body {
 }
 
 .nav ul li a {
-  color: #FF5722;
+  color: white;
   text-decoration: none;
   display: block;
   padding: 10px 20px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  transition: background 0.3s;
 }
 
 .nav ul li a:hover {
-  color: #FFC107;
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 6px;
-}
-
-/* ===== Menú Horizontal en Desktop ===== */
-@media (min-width: 768px) {
-  .nav {
-    position: static;
-    display: flex !important;
-    flex-direction: row;
-    background: transparent;
-    border-radius: 0;
-  }
-
-  .nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  .nav ul li {
-    border: none;
-  }
-
-  .nav ul li a {
-    padding: 0;
-    color: white;
-  }
-
-  .nav ul li a:hover {
-    background: none;
-    border-bottom: 2px solid #fff;
-  }
+  background: #7b2cbf;
 }
 
 
@@ -318,5 +280,6 @@ main {
   .contact-grid { grid-template-columns: 1fr; }
   .contact-hero { padding-top: 100px; }
 }
+
 
 
