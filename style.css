@@ -56,9 +56,9 @@ html, body {
 /* Menú desplegable */
 .nav {
   position: absolute;
-  top: 60px; /* debajo del header */
+  top: 60px;
   right: 20px;
-  background-color: #1a1a1d; /* mismo gris oscuro que header */
+  background-color: #1a1a1d; /* gris oscuro uniforme */
   border-radius: 8px;
   display: none;
   z-index: 1001;
@@ -363,6 +363,7 @@ main {
     color: #E0E0E0 !important;
   }
 }
+
 
 
 
