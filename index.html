@@ -6,6 +6,7 @@
   <title>Página de Misterios</title>
   <link rel="icon" type="image/png" href="imagenes/logo.png">
   <link rel="stylesheet" href="style.css">
+  <link id="theme-style" rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Menu -->
@@ -24,6 +25,7 @@
         <li><a href="#">Conspiraciones históricas</a></li>
         <li><a href="#">Conspiraciones actuales</a></li>
         <li><a href="contacto.html">Contacto</a></li>
+        <li><button id="theme-toggle" class="theme-btn">🌙</button></li>
     </ul>
   </nav>
 </header>
@@ -55,9 +57,10 @@
   <section class="carrusel">
     <button class="btn prev">&#10094;</button>
     <div class="carrusel-container">
-      <div class="carrusel-item"><img src="imagenes/a.png" alt=""></div>
-      <div class="carrusel-item"><img src="imagenes/il.png" alt=""></div>
-      <div class="carrusel-item"><img src="imagenes/giza.png" alt=""></div>
+      <div class="carrusel-item"><img src="imagenes/a.png" alt="foto1"></div>
+      <div class="carrusel-item"><img src="imagenes/il.png" alt="foto2"></div>
+      <div class="carrusel-item"><img src="imagenes/giza.png" alt="foto3"></div>
+      <div class="carrusel-item"><img src="imagenes/nachop.PNG" alt="foto4"></div>
     </div>
     <button class="btn next">&#10095;</button>
   </section>
@@ -72,6 +75,33 @@
     });
   </script>
   <script src="carrusel.js"></script>
+  <script>
+  const btn = document.getElementById('theme-toggle');
+  const themeLink = document.getElementById('theme-style');
+
+  // Ver si el usuario tenía guardado un tema antes
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    themeLink.href = 'white-style.css';
+    btn.textContent = '🌙';
+  } else {
+    themeLink.href = 'style.css';
+    btn.textContent = '☀️';
+  }
+
+  // Cambiar el tema al hacer clic
+  btn.addEventListener('click', () => {
+    if (themeLink.getAttribute('href') === 'style.css') {
+      themeLink.href = 'white-style.css';
+      btn.textContent = '🌙';
+      localStorage.setItem('theme', 'light');
+    } else {
+      themeLink.href = 'style.css';
+      btn.textContent = '☀️';
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+</script>
 </body>
 
   <footer class="footer">
