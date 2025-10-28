@@ -1,3 +1,18 @@
+/* ================================
+    IMPORTACIÓN DE FUENTES GOOGLE
+   ================================ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:wght@400;500;600&family=Roboto+Mono:wght@400&display=swap');
+
+:root {
+  --font-principal: 'Open Sans', Arial, sans-serif;
+  --font-titulos: 'Poppins', sans-serif;
+  --font-secundaria: 'Roboto Mono', monospace;
+}
+
+/* ============================ */
+/* (A CONTINUACIÓN, TU CSS TAL CUAL) */
+/* ============================ */
+
 * {
   margin: 0;
   padding: 0;
@@ -682,3 +697,4 @@ main {
 a {
   text-decoration: underline;
   text-decoration-color: #5a189a;
+}
